@@ -19,34 +19,98 @@
     <script src="https://kit.fontawesome.com/0899f1b08b.js" crossorigin="anonymous"></script>
 
     <!-- tailwind custom style  -->
-    <script>
+    <!-- <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        'fruit-primary':'#F85559',
+                        'fruit-primary': '#F85559',
                     }
                 }
             }
         }
-    </script>
+        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+    </script> -->
+
     <!-- this is custom style  -->
     <style>
-        .font-lato{
+        .font-lato {
             font-family: 'Lato', sans-serif;
         }
     </style>
 </head>
 
-<body>
+<body class="font-lato">
     <!-- this is header section start -->
-    <header>
-        
+    <header class=" md:container md:mx-auto px-4 lg:px-10">
+        <!-- this is nav section start  -->
+        <nav>
+            <div class="navbar p-2 my-4 rounded-full bg-white flex flex-row-reverse items-center md:flex-row-reverse  lg:flex-row   lg:bg-orange-500  ">
+                <div class="">
+                    <div class="dropdown dropdown-bottom dropdown-end">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block w-10 h-10 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                            </button>
+    
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-60">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                            <li class="relative">
+                                <input class="input input-bordered rounded-full" type="text" placeholder="Search Here">
+                                <button class="absolute right-3 top-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+    
+                </div>
+                <div class="navbar-start hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-white font-semibold">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+    
+                    </ul>
+                </div>
+                <div class="navbar-center pr-16 md:pr-96 lg:p-0">
+                    <a class="btn btn-ghost normal-case text-4xl text-black  lg:text-white font-semibold"> <img class="h-10"
+                            src="./images/logo.png" alt="">Fruit Shop</a>
+                </div>
+                <div class="navbar-end invisible lg:visible relative">
+                    <input class="input input-bordered rounded-full h-10" type="text" placeholder="Search Here">
+                    <button class="absolute right-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+    
+                </div>
+            </div>
+        </nav>
     </header>
     <!-- this is main section start  -->
     <main>
-
+        <!-- this is hero banner section  -->
     </main>
     <!-- this is footer section start  -->
     <footer>
