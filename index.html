@@ -49,7 +49,8 @@
     <header class=" md:container md:mx-auto px-4 lg:px-10">
         <!-- this is nav section start  -->
         <nav>
-            <div class="navbar p-2 my-4 rounded-full bg-white flex flex-row-reverse items-center md:flex-row-reverse  lg:flex-row   lg:bg-orange-500  ">
+            <div
+                class="navbar p-2 my-4 rounded-full bg-white flex flex-row-reverse items-center md:flex-row-reverse  lg:flex-row   lg:bg-orange-500  ">
                 <div class="">
                     <div class="dropdown dropdown-bottom dropdown-end">
                         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -59,7 +60,7 @@
                                     d="M4 6h16M4 12h16M4 18h16"></path>
                             </svg>
                             </button>
-    
+
                         </label>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-60">
@@ -70,8 +71,8 @@
                             <li class="relative">
                                 <input class="input input-bordered rounded-full" type="text" placeholder="Search Here">
                                 <button class="absolute right-3 top-3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                        stroke="currentColor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                                     </svg>
@@ -79,7 +80,7 @@
                             </li>
                         </ul>
                     </div>
-    
+
                 </div>
                 <div class="navbar-start hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 text-white font-semibold">
@@ -87,12 +88,12 @@
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
                         <li><a>All Fruits</a></li>
-    
+
                     </ul>
                 </div>
                 <div class="navbar-center pr-16 md:pr-96 lg:p-0">
-                    <a class="btn btn-ghost normal-case text-4xl text-black  lg:text-white font-semibold"> <img class="h-10"
-                            src="./images/logo.png" alt="">Fruit Shop</a>
+                    <a class="btn btn-ghost normal-case text-4xl text-black  lg:text-white font-semibold"> <img
+                            class="h-10" src="./images/logo.png" alt="">Fruit Shop</a>
                 </div>
                 <div class="navbar-end invisible lg:visible relative">
                     <input class="input input-bordered rounded-full h-10" type="text" placeholder="Search Here">
@@ -103,14 +104,122 @@
                                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                     </button>
-    
+
                 </div>
             </div>
         </nav>
     </header>
+    
     <!-- this is main section start  -->
-    <main>
-        <!-- this is hero banner section  -->
+    <main class="md:container md:mx-auto px-4 lg:px-10">
+        <!-- this is banner section  -->
+        <section class="relative ">
+            <!-- this is hero banner section  -->
+            <div class="carousel relative w-auto">
+                <!-- 1st slider  -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./images/banner1.png" class="w-full brightness-50" />
+
+                    <!-- 1st slider title  -->
+                    <div
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white space-y-1 md:space-y-3 lg:space-y-4 ">
+                        <h1 class="text-xl font-bold md:text-3xl lg:text-7xl">Exotic Tastes At Your Doorstep</h1>
+                        <p class="text-xs lg:text-base">We supply highly quality organic products</p>
+                        <button
+                            class="bg-orange-500 p-2 lg:px-8 lg:py-4 rounded-md font-semibold text-xs lg:text-base">Shop
+                            Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-xs md:btn-md ">❮</a>
+                        <a href="#slide2" class="btn btn-xs md:btn-md ">❯</a>
+                    </div>
+                </div>
+                <!-- 2nd slider  -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./images/banner2.png" class="w-full brightness-50" />
+                    <!-- 2nd slider title  -->
+                    <div
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white space-y-1 md:space-y-3  lg:space-y-4 ">
+                        <h1 class="text-xl font-bold md:text-3xl lg:text-7xl">Eat Healthy And Fresh Fruits</h1>
+                        <p class="text-xs lg:text-base">We supply highly quality organic products</p>
+                        <button
+                            class="bg-orange-500 p-2 lg:px-8 lg:py-4 rounded-md font-semibold text-xs lg:text-base">Shop
+                            Now</button>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-xs md:btn-md">❮</a>
+                        <a href="#slide3" class="btn btn-xs md:btn-md">❯</a>
+                    </div>
+                </div>
+                <!-- 3rd slider  -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./images/banner3.png" class="w-full brightness-50" />
+
+                    <!-- 3rd slider title  -->
+                    <div
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white space-y-1 md:space-y-3 lg:space-y-4 ">
+                        <h1 class="text-xl font-bold md:text-3xl lg:text-7xl">Graden Fresh Fruits</h1>
+                        <p class="text-xs lg:text-base">We supply highly quality organic products</p>
+                        <button
+                            class="bg-orange-500 p-2 lg:px-8 lg:py-4 rounded-md font-semibold text-xs lg:text-base">Shop
+                            Now</button>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-xs md:btn-md">❮</a>
+                        <a href="#slide4" class="btn btn-xs md:btn-md">❯</a>
+                    </div>
+                </div>
+                <!-- 4th slider  -->
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="./images/banner4.png" class="w-full brightness-50" />
+
+                    <div
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white space-y-1 md:space-y-3 lg:space-y-4 ">
+                        <h1 class="text-xl font-bold md:text-4xl lg:text-7xl">Eat Freash Juice Everyday</h1>
+                        <p class="text-xs lg:text-base">We supply highly quality organic products</p>
+                        <button
+                            class="bg-orange-500 p-2 lg:px-8 lg:py-4 rounded-md font-semibold text-xs lg:text-base">Shop
+                            Now</button>
+                    </div>
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-xs md:btn-md">❮</a>
+                        <a href="#slide1" class="btn btn-xs md:btn-md">❯</a>
+                    </div>
+                </div>
+            </div>
+            <!-- upper banner section  -->
+            <div class="absolute -mt-24 invisible  md:invisible lg:visible right-0 left-0 m-auto">
+                <div class="flex justify-center gap-4 lg:gap-10 rounded-md bg-slate-50 drop-shadow-lg w-9/12 mx-auto h-[200px] p-8  ">
+                    <div class="text-center">
+                        <img src="./images/fruit1.png" alt="">
+                        <p>Strawberry</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="./images/fruit2.png" alt="">
+                        <p>Orange</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="./images/fruit3.png" alt="">
+                        <p>Mango</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="./images/fruit4.png" alt="">
+                        <p>Strawberry</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="./images/fruit5.png" alt="">
+                        <p>Mango</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- this is deal of the day section  -->
+        <section>
+
+        </section>
+        
     </main>
     <!-- this is footer section start  -->
     <footer>
